@@ -1,0 +1,131 @@
+.footer {
+    height: 216px;
+    width: 100%;
+    background: #252525;
+    .item {
+        display: inline-block;
+        width: 33%;
+        height: 216px;
+	    vertical-align: top;
+        &:last-child {
+            float: right;
+        }
+        h4 {
+            margin-top: 15px;
+	    	margin-bottom:14px;
+            height: 28px;
+            line-height: 28px;
+            color:#ddd;
+            span {
+                display: inline-block;
+                position: relative;
+                height: 28px;
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    bottom: 0;
+                    width: 50px;
+                    height: 2px;
+                    background: $footerColor;
+                }
+            }
+        }
+        &:nth-child(1) {
+            span {
+                &:before {
+                    left: 0;
+                }
+            }
+        }
+        &:nth-child(2) {
+            span {
+                &:before {
+                    left: 25%;
+                }
+            }
+        }
+        &:nth-child(3) {
+            span {
+                &:before {
+                    right: 0;
+                }
+            }
+        }
+    }
+    .friendLinks {
+        text-align: left;
+        ul{
+	    	max-width:260px;
+        }
+        li{
+        	list-style: disc;
+        	display:inline-block;
+        	width:125px;
+        	height:24px;
+        	line-height:24px;
+        	box-sizing:border-box;
+        	padding-left:11px;
+        	position: relative;
+        	a{
+	        	color:#696969;
+        	}
+        	&:hover a,a:hover{
+	        	color:#a40d6c;
+	        	opacity:1;
+        	}
+        	&:before{
+				width:4px;
+				height:4px;
+				content:' ';
+				position: absolute;
+				left:0;
+				top:11px;
+				border-radius: 50%;
+				background: #696969;
+        	}
+        	&:hover:before{
+				background:$footerColor;
+        	}
+        }
+    }
+    .contact {
+        text-align: center;
+        em{
+        	display:inline-block;
+        	margin-right:4px;
+        	font-weight:bold;
+        	color:#db2999;
+        }
+        .call{
+        	line-height:21px;
+        	margin-bottom:17px;
+        }
+        span{
+        	line-height:18px;
+        }
+        .copyright{
+        	line-height:18px;
+        	margin-top:18px;
+        	font-size:12px;
+        	color:#4d4d4d;
+        }
+    }
+    .partner {
+        text-align: right;
+    	font-size:0;
+    	h4{
+    		font-size:14px;
+    	}
+        .friends{
+        	width:255px;
+        	float: right;
+        }
+        a:hover{
+			opacity:1;
+        }
+        img{
+        	display:inline-block;
+			margin:6px 0 6px 15px;
+        }
+    }
+}

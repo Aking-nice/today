@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+  <title>美业人头条</title>
+  <link rel="stylesheet" type="text/css" href="./src/css/common.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/pagelet.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/iconfont/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/main.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/vendors/ueditor_extend.css">
+  <!-- select搜索框 -->
+  <link rel="stylesheet" type="text/css" href="./src/support/select/jquery.searchableSelect.css">
+
+  <script type="text/javascript" src="./src/support/jquery/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="./src/js/index.js"></script>
+  <script src="./src/support/select/jquery.searchableSelect.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="head">
+      <div class="wrap">
+        <!-- logo -->
+        <a class="logo" href="https://mp.toutiao.com/">头条号</a>
+        <!-- nav链接 -->
+        <ul class="links">
+          <li><a href="javascript:;">资讯</a></li>
+          <li><a href="javascript:;">脸谱</a></li>
+          <li><a href="javascript:;">展会</a></li>
+          <li><a href="javascript:;">百科</a></li>
+        </ul>
+        <!-- 侧边栏 -->
+        <div class="tool">
+          <div class="search-group">
+            <input class="btn btn-search2" type="text" name="searchNews" placeholder="搜索资讯">
+            <button class="search"><i class="iconfont icon-search"></i></button>
+          </div>
+          <div class="nav-msg">
+            <div class="nav-msg-entity" data-node="sys_msg_entity">
+              <i class="iconfont icon-msg"></i>
+              <span class="num">1</span>
+            </div>
+            <div class="nav-msg-outer" data-node="sys_msg_wrapper">
+              <div class="nav-msg-transparent"></div>
+              <div class="nav-msg-inner">
+                <ul class="nav-msg-con" data-node="sys_msg_con">
+                  <li ga="通知"><a href="https://mp.toutiao.com/message/#inform" class="nav-msg-type nav-msg-inform" data-node="sys_msg_inform">通知<span class="new_inform_num" data-num="0" style="display: none;"></span></a></li>
+                  <li ga="评论"><a href="https://mp.toutiao.com/profile_v2/comment" class="nav-msg-type nav-msg-comment" data-node="sys_msg_comment">评论<span class="new_comment_num" data-num="0" style="display: none;"></span></a></li>
+                  <li ga="关注"><a href="https://mp.toutiao.com/message/#subscribe" class="nav-msg-type nav-msg-subscribe" data-node="sys_msg_subscribe">关注<span class="new_subscribe_num" data-num="0" style="display: none;"></span></a></li>
+                  <li ga="收藏"><a href="https://mp.toutiao.com/message/#collect" class="nav-msg-type nav-msg-collect" data-node="sys_msg_collect">收藏<span class="new_collect_num" data-num="0" style="display: none;"></span></a></li>
+                  <li ga="转发"><a href="https://mp.toutiao.com/message/#retransmit" class="nav-msg-type nav-msg-retransmit" data-node="sys_msg_retransmit">转发<span class="new_retransmit_num" data-num="0" style="display: none;"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="nav-head">
+            <img src="./html/216f00258f7053f1bb0c">
+          </div>
+          <div class="user-panel">
+            <a href="" target="_blank" title="个人主页">巩师磊</a>
+            <div class="author_dashbord">
+              <ul>
+                <li class="">
+                  <i class=""></i>
+                  <span class="new_author">作者</span>
+                </li>
+                <li class="authors_list top"><a href="javascript:;" target="_blank" title="个人主页">巩师磊</a>
+                </li>
+                <li class="new_logout">
+                  <i class=""></i>
+                  <a href="javascript:;">退出</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="scontent">
+    <div class="wrap1 sclearfix">
+      <!-- 侧边栏 -->
+      <div class="menu">
+        <div class="menu_block">
+          <a href="javascript:;" class="menu_h1 menu_item  menu_main alone"><i class="iconfont icon-home"></i>主页</a>
+        </div>
+        <div class="menu_block">
+          <a class="menu_h1 menu_item menu_article"><i class="iconfont icon-article"></i>我的文章</a>
+          <a href="javascript:;" class="menu_h2 menu_item ">文章列表</a>
+          <a href="javascript:;" class="menu_h2 menu_item">草稿箱<i class="new-reddot"></i></a>
+        </div>
+        <div class="menu_block">
+          <a class="menu_h1 menu_item menu_info"><i class="iconfont icon-product"></i>产品列表</a>
+        </div>
+        <div class="menu_block">
+          <a class="menu_h1 menu_item menu_wenda"><i class="iconfont icon-ziliao"></i>企业资料</a>
+        </div>
+        <div class="menu_block">
+          <a class="menu_h1 menu_item menu_settings"><i class="iconfont icon-guanli"></i>管理</a>
+          <a href="javascript:;" class="menu_h2 menu_item "><i></i>素材管理</a>
+          <a href="javascript:;" class="menu_h2 menu_item "><i></i>评论管理</a>
+        </div>
+        <div class="menu_block">
+          <a class="menu_h1 menu_item menu_settings"><i class="iconfont icon-home"></i>账号设置</a>
+          <a href="javascript:;" class="menu_h2 menu_item "><i></i>账号信息</a>
+          <a href="javascript:;" class="menu_h2 menu_item "><i></i>账号设置</a>
+        </div>
+      </div>
+      <!-- main -->
+      <div class="stage">
+        <div id="pagelet-write" class="pagelet-write">
+          <!-- 标题 -->
+          <div class="page_tabs">新增文章<a href="javascript:;" target="_blank" class="page_tabs2">发文规范</a>
+          </div>
+          <!-- 编辑区 -->
+          <div class="edit-wrap">
+            <div class="edit_body" id="edit_body" style="position: relative;">
+              <!-- 文章标题 -->
+              <input type="text" name="title" id="title" class="edit_title" value="" placeholder="标题（5-50字）" style="padding-right: 55px;">
+              <!-- 文章分类 -->
+              <select class="s-select">
+                  <option value="请选择文章分类">请选择文章分类</option>
+                  <option value="科普">科普</option>
+                  <option value="趣闻">趣闻</option>
+                  <option value="美图">美图</option>
+                  <option value="笑话">笑话</option>
+              </select>
+              <!-- 富文本 -->
+              <div id="editor" class="edui-default">
+              </div>
+              <span class="title_tip">0/50</span></div>
+            <!-- 封面区 -->
+            <div class="edit-cell">
+              <div class="edit-main front-cover master_cover">
+                <label class="edit-label">封面</label>
+                <div class="edit-input j_front_cover">
+                  <div>
+                    <div class="front-cover-type">
+                      <div class="front-cover-item" ga="封面_单图">
+                        <i class="front-cover-radio" data-type="single"></i>单图
+                      </div>
+                      <div class="front-cover-item" ga="封面_三图">
+                        <i class="front-cover-radio selected" data-type="multi"></i>三图
+                      </div>
+                      <div class="front-cover-item" ga="封面_自动">
+                        <i class="front-cover-radio" data-type="auto"></i>自动
+                        <i class="gg-timer-tip j_timer_tip" data-title="系统会自动从正文中挑选封面，正文无图会使用无封面模式"></i>
+                      </div>
+                    </div>
+                    <div class="front-cover-main" style="display: block;">
+                      <i class="front-cover-cur" style="left: 78px;"></i>
+                      <div class="front-cover-upload">
+                        <div class="front-cover-img front-cover-single"><img src="./html/2c3d0004114c13602bcc" _src="2c3d0004114c13602bcc" _origin_uri="2c3d0004114c13602bcc" style="opacity: 1;">
+                          <div class="cover-img-modify" ga="封面设置_进入手动裁剪" style="display: block;"><i data-hovertitle="裁切图片" class=""></i></div>
+                        </div>
+                        <div class="front-cover-img front-cover-multi" style="display: block;">
+                          <div class="cover-img-modify" ga="封面设置_进入手动裁剪"><i data-hovertitle="裁切图片"></i></div>
+                        </div>
+                        <div class="front-cover-img front-cover-multi" style="display: block;">
+                          <div class="cover-img-modify" ga="封面设置_进入手动裁剪"><i data-hovertitle="裁切图片"></i></div>
+                        </div>
+                      </div>
+                      <div class="front-cover-right">
+                        <button class="new-btn front-cover-preview cancel">客户端预览</button>
+                      </div>
+                      <div class="front-cover-tip">优质的封面有利于推荐，请使用清晰度较高的图片，避免使用GIF、带大量文字的图片。</div>
+                      <div class="front-cover-repeat-tip" style="display: none;">为保证读者体验，请勿选择重复的封面。</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 定时发送设置 -->
+            <div class="edit-cell">
+              <div class="edit-main">
+                <label class="edit-label">设置</label>
+                <div class="edit-input">
+                  <div class="gg-control j-article-ad" style="display: none;">
+                    <div class="j-ad-container"></div>
+                  </div>
+                  <div class="gg-control gg-timer">
+                    <div class="gg-item">
+                      <i class="gg-radio gg-timer-radio " ga="定时发表"></i>定时发表<i class="gg-timer-tip j_timer_tip" data-title="定时发表后文章正常审核，审核通过后，在设定的时间放出、推荐给读者。"></i>
+                      <div class="timer-datetimepicker j_timer_datetimepicker">
+                        <input id="timepicker" class="timepicker j_timepicker" readonly="" type="text">
+                        <label class="add-on" for="timepicker"></label>
+                        <span>定时范围在2-24小时范围内</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 发表编辑 -->
+            <div class="edit-cell edit-btns">
+              <div class="edit-main">
+                <div class="edit-input">
+                  <button type="button" class="edit-btn fb" ga="发表$">发表</button>
+                  <button type="button" class="edit-btn cg" ga="存草稿$">存草稿</button>
+                  <button type="button" class="edit-btn yl" ga="客户端预览">客户端预览</button>
+                  <button type="button" class="edit-btn qx" ga="取消$">取消</button>
+                </div>
+              </div>
+              <div class="edit-tip limit_warning" id="limit_warning"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+
+    </style>
+    <div class="modal cover-modal cover-select-modal" id="cover-select-modal" data-backdrop="static" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog-wrapper">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <iframe name="select-cover-frame" style="width: 100%; height: 608px" src="./html/picture.html"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 图片裁切 -->
+    <div class="modal cover-modal cover-crop-modal" id="cover-crop-modal" data-backdrop="static">
+      <div class="modal-dialog-wrapper">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="cover-header">
+                <div class="cover-header-tab selected">裁切图片</div>
+              </div>
+              <div class="cover-crop-main">
+                <div class="cover-crop-box">
+                  <img id="cover-jcrop">
+                </div>
+                <div class="cover-crop-view">
+                  <img src="https://mp.toutiao.com/core/article/new_article/?article_type=0" class="cover-crop-view-img">
+                </div>
+              </div>
+              <canvas id="cover-crop-view-canvas"></canvas>
+              <div class="cover-footer">
+                <div class="cover-process-box">
+                  <i class="cover-process-radio gg-radio" ga="封面设置_美化"></i> 封面美化（清晰的封面有利于推荐）
+                </div>
+                <button class="new-btn submit cover-crop-submit" ga="封面设置_手动裁剪">确定</button>
+                <button class="new-btn cancel cover-crop-cancel">取消</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pagelet-popalert">
+      <div class="modal popalert-modal" id="popalert-modal" data-backdrop="static">
+        <div class="modal-dialog-wrapper">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="popalert-info">
+                  <div class="popalert-icon"><i></i>提示</div>
+                  <div class="popalert-tip" id="popalert-tip"></div>
+                </div>
+                <div class="popalert-btns">
+                  <button id="popalert-submit" class="popalert-submit new-btn submit" data-dismiss="modal">确定</button>
+                  <button id="popalert-cancel" class="popalert-cancel new-btn cancel" data-dismiss="modal">取消</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 尾部 -->
+  <div class="footer">
+    <div class="wrap">
+      <div class="item">
+        <div class="friendLinks">
+          <h4><span>友情链接/LINK</span></h4>
+          <ul>
+            <li><a href="javascript:;">景荣春</a></li>
+            <li><a href="javascript:;">美容人才网</a></li>
+            <li><a href="javascript:;">云同盟</a></li>
+            <li><a href="javascript:;">壹象网</a></li>
+            <li><a href="javascript:;">成都美容人才网</a></li>
+            <li><a href="javascript:;">火爆化妆品招商网</a></li>
+            <li><a href="javascript:;">猎商</a></li>
+            <li><a href="javascript:;">成都会展网</a></li>
+            <li><a href="javascript:;">奢美网</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div class="contact">
+          <h4><span>CONTACT US</span></h4>
+          <p class="call">全国免费服务热线: <em>400-6868-488</em>{工作时间:9:00-18:00}</p>
+          <span>成都维纳美博展览有限公司<br>地址：成都市人民南路四段19号威斯顿联邦大厦10楼1009室<br>创立于一九九七年</span>
+          <p class="copyright">川公网安备 51010702000694号 </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="partner">
+          <h4><span>合作伙伴/PARTNER</span></h4>
+          <div class="friends">
+            <a href="javascript:;"><img src="./src/images/friends-logo1.jpg"></a>
+            <a href="javascript:;"><img src="./src/images/friends-logo2.jpg"></a>
+            <a href="javascript:;"><img src="./src/images/friends-logo3.jpg"></a>
+            <a href="javascript:;"><img src="./src/images/friends-logo4.jpg"></a>
+            <a href="javascript:;"><img src="./src/images/friends-logo5.jpg"></a>
+            <a href="javascript:;"><img src="./src/images/friends-logo6.jpg"></a>
+            <a href="javascript:;"><img src="./src/images/friends-logo7.jpg"></a>
+            <a href="javascript:;"><img src="./src/images/friends-logo8.jpg"></a>
+            <a href="javascript:;"><img src="./src/images/friends-logo9.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 悬浮层 -->
+  <!-- <div id="feedback">
+    <div class="layer-side">
+      <div class="scan-code">
+        <div class="fb-icon code">
+        </div>
+        <div class="scan">
+          <i class="iconfont icon-close"></i>
+          <img src="../src/images/code.png" width="114" height="114">
+          <p>扫一扫 手机看头条</p>
+        </div>
+      </div>
+      <div class="fb-icon back-top"></div>
+    </div>
+  </div>
+   -->
+  <!-- <script type="text/javascript" src="./src/support/lib.js"></script> -->
+  <!-- <script type="text/javascript" src="./src/support/common.js"></script> -->
+  <!-- <script type="text/javascript" src="./src/support/bootstrap-datepicker.js"></script> -->
+  <!--vote-->
+  <!-- <script type="text/javascript" src="./src/support/jqueryUI/jquery-ui.js"></script> -->
+  <!--gallery sort-->
+  <!-- <script type="text/javascript" src="./src/support/jquery.jcrop.js"></script> -->
+  <!--cover-->
+  <!-- <script type="text/javascript" src="./src/support/jqueryUI/jquery.ui.widget.js"></script> -->
+  <!--文件-->
+  <!-- <script type="text/javascript" src="./src/support/jquery.fileupload.js"></script> -->
+  <!-- <script type="text/javascript" src="./src/support/image-picker.js"></script> -->
+
+  <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.js"></script>
+  <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.js"></script>
+  <script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+  <script>
+    //UEditor init
+    var ue = UE.getEditor('editor');
+
+    // select搜索框
+        $('.s-select').searchableSelect();
+  </script>
+</body>
+
+</html>

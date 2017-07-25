@@ -1,0 +1,71 @@
+// 搜索按钮
+.search-group {
+    display: inline-block;
+    width: 160px;
+    border: 1px solid #e6e6e6;
+    border-radius: 30px;
+    position: relative;
+    .btn-search2 {
+        padding-right: 45px;
+        height: 28px;
+        display: inline-block;
+    }
+    .search {
+        position: absolute;
+        right: 0;
+        top: -1px;
+        border: 0;
+        background-color: transparent;
+        width: 45px;
+        height: 28px;
+        line-height: 28px;
+        i {
+            font-size: 17px;
+            text-align: center;
+            color: #b2b2b2;
+        }
+    }
+}
+
+
+.edit_title {
+    @include basicInp;
+}
+
+// 标题输入字数
+.title_tip {
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #9e9e9e;
+    line-height: 20px;
+}
+
+.title_red {
+    color: red;
+}
+
+// select
+.edit-wrap {
+    .searchable-select-dropdown {
+        top:39px;
+    }
+    .searchable-select-holder {
+        width: 344px;
+        height:40px;
+        line-height:33px;
+        border-color: #e9e9e9;
+        box-shadow:none;
+        padding: 3px 20px 5px;
+        background: url(../support/select/chosen-sprite@2x.png) no-repeat;
+        background-position: 99% -35px;
+    }
+    .searchable-select-dropdown,.searchable-select-input{
+        border-color: #e9e9e9;
+    }
+    .edit_title,
+    .searchable-select {
+        margin-bottom:30px;
+    }
+}

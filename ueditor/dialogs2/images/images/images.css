@@ -1,0 +1,475 @@
+@font-face {
+    /* font-properties */
+    font-family: pictos;
+    src: url('//s0.pstatp.com/site/pgc-fe-icon/iconfont.woff');
+}
+
+.tui-tab-list {
+    border-bottom: 2px solid #e8e8e8;
+    font-size: 16px;
+    position: relative;
+}
+.tui-tabs .tui-tab:first-child {
+    margin-left: 12px !important;
+}
+.tui-tab {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 15px 2px;
+    border-bottom: 2px solid transparent;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+
+.tui-tab-selected {
+    color: #f85959;
+    border-bottom-color: #f85959;
+}
+
+.tui-tab-panel {
+    display: none;
+    width: 100%;
+    padding: 10px 15px !important;
+    position: relative;
+}
+
+.tui-tab-panel-actived {
+    display: block !important;
+}
+
+#upload.panel.focus {
+    /* width: 100%; */
+    height: 450px;
+    display: block;
+    clip: auto;
+    position: relative;
+    margin: 0 -3px;
+}
+
+.tui-dialog-close {
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    padding: 4px 0 4px 18px;
+    border-left: 1px solid #e9e9e9;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(0, 0, 0, .2);
+    text-shadow: 0 1px 0 #fff;
+    text-decoration: none;
+}
+
+.tui-dialog-close-x {
+    cursor: pointer;
+    display: block;
+    font-style: normal;
+    vertical-align: baseline;
+    text-align: center;
+    text-transform: none;
+    text-rendering: auto;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.tui-dialog-close-x:after {
+    content: '\D7';
+}
+
+.tui-content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#upload .placeholder {
+    height: 322px !important;
+}
+
+.push-right {
+    float: right;
+    margin-top: 3px;
+}
+
+.temai-header {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 10px;
+}
+
+.temail-toolbar {
+    margin: 10px;
+}
+
+.temai-list {}
+
+.temai-footer {
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    padding: 10px 20px;
+    margin-left: -20px
+}
+
+.temai-footer:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.tui-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 10px 30px;
+    font-size: 12px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.tui-btn-negative {
+    color: #fff;
+    background-color: #f85959;
+    border-color: #f85959;
+}
+
+.temai-list img {
+    width: 100px;
+    height: 100px;
+}
+
+.temai-select {
+    -webkit-appearance: none;
+    height: 32px;
+    padding: 0 10px;
+    background: #fff;
+}
+
+.temai-search {
+    -webkit-appearance: none;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid #a6a6a6;
+    width: 320px;
+}
+
+.good-detail a {
+    color: #222;
+    font-size: 14px;
+}
+
+.good-source {
+    float: right;
+    color: #222;
+}
+
+.good-item-actived::after {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.temai-content {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.temai-suggest {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+
+.tui-tabs .tui-tab-list {
+    border-bottom: 1px solid #e8e8e8 !important;
+}
+
+.tui-dialog-close {
+    top: 17px !important;
+}
+
+#dndArea {
+    border: none !important;
+}
+
+#upload .placeholder .webuploader-pick {
+    background: #f85959 !important;
+}
+
+.use-manual {
+    padding-top: 150px;
+    width: 460px;
+    margin: auto;
+    line-height: 2;
+    color: #999;
+    background: url(./images/image.png) center 70px no-repeat;
+}
+
+#images .tui-btn {
+    border: 1px solid #d9d9d9 !important;
+}
+
+.image-footer {
+    display: none;
+}
+
+.image-footer .drag-tip {
+    position: relative;
+    top: 4px;
+}
+
+.image-footer .hidden {
+    display: none;
+}
+
+.webuploader-pick {
+    font-size: 14px !important;
+}
+
+#upload .filelist {
+    height: 100%;
+}
+
+.loading-holder {
+    min-height: 240px;
+    display: none;
+    z-index: 100;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    position: absolute;
+}
+
+.loading-ic {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -18px;
+    z-index: 1000;
+    background: url(http://s2.pstatp.com/pgc/v2/resource/pgc_web/static/style/image/loading_v2.50c5e3e.gif) center center no-repeat;
+}
+
+.push-left {
+    float: left;
+}
+
+.push-right {
+    float: right;
+}
+
+.tui-input-group-addon, .tui-input-group-wrap, .tui-input-group>.tui-input {
+    display: table-cell;
+}
+
+.tui-input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.tui-input-group-wrap {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.temai-jump-input {
+    font-size: 12px;
+    width: 36px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.temai-page-next, .temai-page-pre {
+    padding: 0 5px;
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+}
+
+.temai-page-next::after {
+    content: '';
+    font-size: 14px;
+    color: #999;
+    border-top: 1px solid #8a8181;
+    border-right: 1px solid #8e8686;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 1000;
+}
+
+.temai-page-pre::after {
+    content: '';
+    font-size: 14px;
+    color: #999;
+    border-top: 1px solid #8a8181;
+    border-left: 1px solid #8e8686;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.subtab li {
+    display: inline-block;
+    padding: 5px 10px 0 0;
+    cursor: pointer;
+}
+
+.subtab li.actived {
+    color: #f85959;
+}
+
+.subtab-panel {
+    position: relative;
+}
+
+.no-data {
+    padding-top: 150px;
+    width: 460px;
+    margin: auto;
+    text-align: center;
+    line-height: 2;
+    color: #999;
+    background: url(./images/image.png) center 70px no-repeat;
+}
+
+.resource-grid {
+    display: none;
+    margin: 10px -10px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.resource-item {
+  width: 142px;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.resource-item img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.add-resource {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    left: 0;
+}
+
+.add-resource input[type=checkbox] {
+  opacity: 1;
+  width: 0px;
+  height: 0px;
+  -webkit-appearance: none;
+  visibility: hidden;
+}
+
+.pgc-checkbox {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    background-image: url(./images/mp_all.png);
+    cursor: pointer;
+    background-position: -510px -386px;
+}
+
+input[type=checkbox]:checked + i.pgc-checkbox {
+  background-position: -490px -386px;
+}
+
+.state-complete.dragable {
+    cursor: all-scroll;
+}
+.recommend{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+}
+.recommend .title{
+    float: left;
+}
+.recommend .more{
+    cursor: pointer;
+    float: right;
+}
+.recommend-list{
+    margin-top: 27px;
+    height: 120px;
+    width: 620px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.recommend-list::after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    width: 0;
+}
+.recommend-list>li{
+    height: 100px;
+    margin-right: 10px;
+    display: inline;
+}
+.recommend-list>li>img{
+    height: 100%;
+    cursor: pointer;
+}
